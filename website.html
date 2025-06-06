@@ -1,0 +1,72 @@
+<!-- their are two types of file paths 1. ABSOLUTE FILE PATH   2.  RELATIVE FILE PATH 
+1. ABSOLUTE --  a file path thst is relative to the root of the computer. EX . C:program/files/img.png  
+2. RELATIVE  --  it means jaise mein karti hoon ssari cheexe ek folder meinhi rakho for ease
+../cdbgn/vdb -- this enables us ".." to move out of that folder and look for the bigger root folder and then choose something.  ANOTHER ONE ./xjdb/vgmh  --  this "./" enables us to use any object present in that directory of folder -->
+<img src="../udemy/selfnotes.txt" alt="">
+
+ <!--  a multipage website contains diff html pages linked to ecahother by anchr tag.  EX -->
+<a href="./book.html"> About page</a>
+<!-- to make an image point the link/html do it like this  
+ <a href = "LINK OR ./ADDRESS OF THE FILE" > <img src="./ADDRESS OF PHOTO"/> </a>-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ </head>
+ <body>
+    <!-- <center>
+      <font size = "20"  color="blue">My Website</font>
+    </center>   <hr/>
+   <center>
+      <table border="1">hello</table>
+   </center> -->
+   <img src="./Screenshot 2024-06-18 210641.png" alt="">
+ 
+ <!-- this | is called the boilerplate of html.  " DOCTYPE html " determines the version of the html  
+  lang = " en "- defines the lang of thecontent that is english.  
+  *** THE 27TH CHP "HTML BOILERPLATE" IS VERY IMPORTANT FOR INTERVIEW  
+  title is the part that is displayed on top.-->
+
+  <!--  HOSTING THE PROJECT WITH GITHUB -- that is web hosting  
+   to do so we need to put our work or files with all assests on web server aka internet 
+   LOCAL DEVELOPMENT - all the files and folders are locally available on the computer. If some one else wants to access the website then we cannot just send him the zipped files and then make the files anf folder available locally on that pc . -->
+
+   <!-- In HTML , their are "font" , "color" , and "center" tags -->
+
+   <!--  To put the files and folders on internet or web hosting login to github.com
+   upload it on your github repository and then go to its settings and then pages -- their you have to choose main branch then sabse upar kuch toh hoga phir dikhayega ki this site is live at... 
+   
+   CSS chpter starts in next css.css-->
+
+   <!--  CSS - Cascading Style Sheets 
+   It allows us to style our websites make it more attractive.
+   Their are many style sheet language such as CSS, Sass , Less and so on . But the most important one is  CSS
+   Their are three types of css 1. Inline  2.Internal  3.External 
+   1.INLINE - <tag style="css" /> - it can be added to any tag , break, hr, img, etc. here, ... 
+   It is a type to add CSS  in to a particular HTML Tag 
+   2. INTERNAL  - <style> css </style>  -- in between the  the opening and closing tag of style we use css . We can apply it anywhere inside the whole html document . To do css for a particular part we need to  use 'selector' 
+   eg. - html{  background: red;  }
+   3. EXTERNAL - <link href = "style.css" />  -- It is written in a completely different file having '.css' extension. So , to link our css fie with html file , in html file under head we use link tag and write the rel = stylesheet then href = "./  css file "
+   
+   But, inline css is good for single element, then internal css is good for one page website but -- for multi-page website external css is always prefered
+   
+   preview in 5.1 project file  adding css-->
+   <img src="./Screenshot 2024-06-22 000339.png" alt="">
+   <img src="./Screenshot 2024-06-22 000359.png" alt="">
+
+
+<!-- !!! BOOTSTRAP TRIAL  -->
+ <div class="container">
+   <div class="row">
+      <div class="col-2">hello</div>
+      <div class="col-4">gello</div>
+      <div class="col-6">mello</div>
+   </div>
+ </div>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

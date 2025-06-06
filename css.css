@@ -1,0 +1,40 @@
+/*   CSS - Cascading Style Sheets 
+   It allows us to style our websites make it more attractive.
+   Their are many style sheet language such as CSS, Sass , Less and so on . But the most important one is  CSS
+   Their are three types of css 1. Inline  2.Internal  3.External 
+   1.INLINE - <tag style="css" /> - it can be added to any tag , break, hr, img, etc. here, ... 
+   It is a type to add CSS  in to a particular HTML Tag 
+   2. INTERNAL  - <style> css </style>  -- in between the  the opening and closing tag of style we use css . We can apply it anywhere inside the whole html document . To do css for a particular part we need to  use 'selector' 
+   eg. - html{  background: red;  }
+   3. EXTERNAL - <link href = "style.css" />  -- It is written in a completely different file having '.css' extension. So , to link our css fie with html file , in html file under head we use link tag and write the rel = stylesheet then href = "./  css file "
+   
+   But, inline css is good for single element, then internal css is good for one page website but -- for multi-page website external css is always prefered
+   
+   preview in 5.1 project file  adding css 
+    */
+
+/*  # CSS Selectors -- It is a part that selects the html in order to apply whichever rules go in between these curly brces.
+ syntax -- property : value 
+1. Element selector -- Selects a particular html tag . it also means to apply those changes to all those tags.
+2. Class selector -- requires a dot followed by the name of the class that we are selecting. It allows you to grp diff parts of your html file into having the same styling. VERY USEFUL IN MULTIPAGE WEB
+3. ID Selector -- it has its own special symbol => # or $ followed by name of ID 
+4. Attribute selector -- attributes such aas 'id, class, draggable, src, href, alt' syntax - html element followed by namee of attribute
+ eg . p[draggable]{ color : red } */
+h2{
+    color: rgb(142, 127, 255);
+}
+.red-text{
+    color: yellowgreen;
+}
+#redd{
+    color: violet;
+}
+p[draggable]{
+    color: cadetblue;
+}
+p[draggable="false"]{
+    color: chocolate;
+}
+p[draggable='true']{
+    color: bisque;
+}

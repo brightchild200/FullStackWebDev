@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book index</title>
+</head>
+<body>
+    <h1>book</h1>
+    <h1>another</h1>
+
+    <h1>book</h1>
+    <h1>another</h2>
+
+    <h1>book</h1>
+    <h1>another</h1>
+    
+<!-- alt + z to stop horizontal scorlling
+    crtl + [ for left side indentation   and  crtl + ] for right side indentation
+   opening tag jo hoga woh waisa hai banega. SEE UP --- there <h1> opening hai but </h2> closing toh content in output will be in h1 size only .     **NO EFFECT OF CLOSING TAG**.      Similarly, in case of <h2> opening and h1 colsing tags.     ** THIS IS A BUG IN HTML **
+     1. Avoid using multiple <h1> elements on one page  -->
+
+<p> This ia paragrph tag. It is used to write a paragraph.</p>
+<p> This ia paragrph tag. It is used to write a paragraph.</p>
+<!--  to get diff texts and in go to www.lipsum.com  -->
+
+<!-- --- VOID OR SELF CLOSING ELEMENTS ---
+ / forward slash   and   \ backward slash  
+ is is advisible to uswe different para tags for diff para instesd of <br/> element  -->
+
+<hr/>  <br />    <!--  it is horizontsl rule / line tag   
+      it is break element which applies a blank space.   Extremely helpful for making a poetry 
+     for ex.
+again a ** NO GLITCH . IT IS OFFICIALLY VALID ** it can be  <hr> or <hr />  similarlly for <br> it works the same -->
+<p> This ia paragrph tag. It is used to write a paragraph.</p>
+<hr>  <br>
+<p> This ia paragrph tag. It is used to write a paragraph.</p>
+
+<!-- --- UNORDERED LIST is <ul> </ul> , it basically provides a space of TAB. SO. to list items one by one it contains list items  <li> </li> -> this provides bulletins to the objects of list 
+ *** unodered list is used when th order of the list doesn't matters . but when he order matters we use ODERED LIST , it gives proper numbering to the list. BOTH SHOW VARIATIONS ONLY WHEM LIST ITEM IS USED... ***  -->
+
+<ul>milk  apple  curd banana </ul>
+<ul>
+    <li> milk </li>  
+    <li> apple</li>  
+</ul>
+
+<ol>
+    <li> milk </li>  
+    <li> apple</li>  
+</ol>
+
+<!-- NESTING A LIST INSIDE ANOTHER LIST  prefer unordered list -->
+<ul> 
+    <li> books</li>
+    <li>movies
+        <ul>
+            <li> luca </li>
+            <li> elemental </li>
+            <li> spy</li>
+        </ul>
+    </li>
+</ul>
+
+<ol> 
+    <li> books</li>
+    <li>movies
+        <ol>
+            <li> luca </li>
+            <li> elemental </li>
+            <li> spy</li>
+        </ol>
+    </li>
+</ol>
+
+<!-- ANCHOR ELEMENTS -> Attributes of HTML. It allows us to create hyperlinks.<a>  </a> it also has opening and closing tag. But in the above form it is not an active link. So we need to add attribute in the opening tag just after a and before > . ---  Is adds additional information to the html .
+Ex    *** <tag attribute = value> content </tag> ***
+We can gave as many as attributes    Ex  *** <tag attribute = value attribute = value > content </tag> ***
+'href' is used to direct the page to that URL.
+'draggable' provides access to click and drag the content -->
+<a href = "https://www.google.co.in/" > GOOGLE </a> <br/>
+
+<!-- IMAGE TAG  --
+The main element of image tag is 'src' that is source.  It tells the image element about the source of the image. Hence as its value it has URL of the location. It does not contains a closing tag , it is a self closing tag. 
+Ex  <img src  = " link "/>    after  the link we can add a forward slash / and write the size of the img in pixels then again /.   
+ex   <img src = "https.d b bfn.com/200/" />  --- THIS IS NOT WORKING 
+Another imp aspect is the 'alt' stands for alternative text description which helps the reader to understand what the website is about .
+AUR OFFLINE IMAGES KE LIYE    save it in your folder first and then do it  -->
+<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/34a58c0f-fdb1-4509-b1d9-7996f878a9d5/dej22f0-511547e8-c3be-473f-b379-68930c3a694d.jpg/v1/fill/w_1280,h_1792,q_75,strp/satoru_gojo_v1_by_suhir7_dej22f0-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM0YTU4YzBmLWZkYjEtNDUwOS1iMWQ5LTc5OTZmODc4YTlkNVwvZGVqMjJmMC01MTE1NDdlOC1jM2JlLTQ3M2YtYjM3OS02ODkzMGMzYTY5NGQuanBnIiwiaGVpZ2h0IjoiPD0xNzkyIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMzRhNThjMGYtZmRiMS00NTA5LWIxZDktNzk5NmY4NzhhOWQ1XC9zdWhpcjctNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.A8ElkCxBhdiJScK-1S2i1hU-FrNre2zt-nmBXbQNY6I" alt="Saturo_Gojo" style="height: 200px;  width: 150px;" />
+<img src="./goal.png" style="height: 200px;  width: 150px;" />
+
+<!-- bakika website.html mein hai -->
+
+</body>
+</html>

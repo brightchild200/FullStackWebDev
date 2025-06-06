@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="properties.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>hello</h1>
+    <h2>hello unset</h2>
+    <p>this is how we use the font family. initial</p>
+    <p id="helvetica">helvetica center</p>
+    <p id="arial">arial end</p>
+    <p id="serif">serif justify</p>
+    <p id="sans_serif">sans serif left</p>
+    <p id="cursive">cursive right</p>
+    <p id="monospace">monospace start</p>
+    <p id="fantasy">fantasy inherit font weight</p>
+    <p>text styling - the above </p>
+    <p>to make changes in root we use html{} tag </p>
+    <br><h1>CSS INSPECTION</h1>
+<!-- to inpect css we need to go to chrome then any website and Shortcut is - CTRL + SHIFT + I -- we get the develor tools over there. OR ELSE ,, INSPECT 
+ we can change the properties live by choosing + next to filter button. 
+ computed mein jo bhi element mein choose kar rahi hoon uspe lage hue css dikhata hai .
+ even on clicking the three dots we can get css overview -->
+
+ <!-- BOX MODEL 
+  we can give or change the width and height of any element , also we can give border to it
+  this border css can take 3 values separated by space 1st is the thickness , 2nd is the style of the line, 3rd is color of the border. 
+  but if we want our element to not to change then we need to add these things -- border-top: 0px; border: 
+  border ki thickness outwards badhti hai . we can specify the border thickness by the syntax -- border-width - top right bottom left,, or else we can just assign two values as top & bottom and right & left. 
+  !and if i add padding to this element then that padding will push the border outward
+  And margin is a part of the element which is outside the border.  -->
+
+  <!-- CONTENT DIVISION ELEMENT <div> - it acts as a container which grps the elements and content together and keep other items separated from it. 
+    
+    PESTICIDE DHROME EXTENSION IA A FREE debugger t check bugs in your css -->
+
+
+    <!-- INTERMEDIATE CSS 
+     #CASCADING - It is all about which css properties will be applied and which will be discarded . 
+    subse phele external css apply hota hai then html file mein jo style tag mein hota hai woh appply hoga and last and most imp layer is the inline css. SEE 
+    
+CSS cascading also matters in terms of 1. Position 2.Specificity 3.Type  4.Importance
+ 1.Position - jo line of codes mein sabse niche hoga wahi dikhta hai . IMAGE.PNG
+2. Specificity - It shows how specific you are IMAGE1.PNG
+3. Type - Same as gin=ven above in #CASCADING 
+4. Importance - if humne koi css properties dali toh uske aage agar space !important dalun toh sabse jyaada importance usko milegi . -->
+<img src="./image.png" alt="" style="overflow: hidden; height: 350px; float: left;">
+<img src="./image1.png" alt="" style="overflow: hidden; height: 350px;">
+<img src="./image2.png" alt="" style="overflow: hidden; height: 400px; float: right;">
+
+<!-- we can add multiple classes to the same element just by giving a space betwwen them . Eg. class="a-id another-id" , if meinee dono classes ko same css diya toh jo end mein css likha hai and jis class ke liye likha hai woh execute and show hoga . 
+ bhale hi hum id ko koi css de rahe hai par agar inline css dala hai toh wahi show hoga <IT WILL HOLD MOST IMPORTANCE> i.e. << TYPE > SPECIFICITY >>  -->
+
+<!-- COMBINING CSS SELECTORS
+ agar mere passs ek div ahi and i have assigned it a class and woh class mein mere pass ek paragraph tag hai aur suppose dive ke bahar bhi paragrph tah ahi toh jab mein "p" elemnt ko use karke dono ko koi css propertie dungi toh woh apply hogi . But phir jab mein CSS properties div ke andhar wale para emement ko dungi by ".class_name element" toh yeh more specific ho jayega and woh para element ko yeh property hi lagegi . -->
+
+<p>This will be taken by the class element css.</p>
+<div class="this">
+    <p>this is the amgic of class element property</p>
+</div>
+
+<!-- ## Types of combining - 
+ 1) Group - diff selectors are spaced out by comma and assigned same css property
+ 2) Child - Suppose mere div ke andar ek aur div banaya hai meine toh outer div is parent div and inner div is child so we use "OUTER_DIV > INNER_DIV" and then assign css properties to it . # But this relation is valid for only one generation. Eg. paragraph tag of a div kiya toh ".class_name > p" ismein dale hue css specifically sirf usse paragraph tag ko lagega.
+ 3) Descendant - jo meine upar explain kiya hai for combining css # that's called as descendant 
+ 4) Chaining - It applies where all selectors are true.  Eg. i have many items with same class name then to be specific i will write as ".class_nameelement" #THEIR SHOULD NOT BE ANY SPACE BETWEEN THE SELECTORS. Always start with element then class and at the end id 
+ 5) COMBINIG COMBINERS - $THIS IS DYNAMIC $ we can combine any of the above combiners .     -->
+
+<!-- CSS POSITIONING - 
+ 1)Relative positioning - it positions the elment relative to the orignial st. 
+ 2) Absolute positioning - Position relative to nearest positioned ancestor or top left corner of webpage.  -->
+
+<!-- CSS display
+ block gives a set height and width to the element while the inline command aligns the elemnts in a line
+ inline - block does the mxture of both.     None does not displays the element
+ the height ndd width of inline element does not increases but for block it increases  -->
+<h3 class="inline" >Harry</h3>
+<h3 class="inline" >Potter</h3>
+<h3 class="block" >Harry</h3>
+<h3 class="block" >Potter</h3>
+<footer>isko agar css clear right diya toh woh floating property ignore karke normal jagah pe aa jayega </footer>
+
+<!-- CSS Float 
+ Wrapping the text around a photo and all . Thus we can float the sidebar -->
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+@media (max-width: 600px){
+
+    /* CSS for screens below or equals to 600px wide
+    and iske andar class id wagera ka css likhte hai */
+}
+
+@media(orientation: landscape) {
+    .media {
+        width: 50%;
+    }
+}
+
+/*  Mobile Devices: 319px — 480px
+[powderblue] iPads and Tablets: 481px — 1200px
+[limegreen] Laptops: 1201px — 1600px
+[seagreen] Desktops: 1601px and more */

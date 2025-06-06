@@ -1,0 +1,82 @@
+/* COLOR PROPERTIES
+we can color our background too = background-color  &&  to get our desired colours we can get it on mdn docs named colours. We can get color stacked palette at color hunt.co - it provides a good combo of colors. instead of names we can use hexcodes.
+*/
+html{
+    background-color: antiquewhite;
+}
+h1{
+    color: whitesmoke;
+    background-color: darkseagreen;
+}
+h2{
+    color: #faf8f1;
+    background-color: #c58940;
+    text-align: unset;
+}
+/* FONT PROPERTIES
+we can use 'font-size' command to adjust the font size.  "1px" = 1/96th inch = 0.26 mm , "1pt" = 1/72 inch = 0.35 mm (in WORD  we use this pt font size parameter , "1em" = 100% of parent( relative size) , "1rem" = 100% of the root (html).  -- em changes with change in that particular element but rem doesn't changes wrt the html . hence , it is good to use "rem" while developing a website.  
+"Font-weight" - basically we can use any type of boldness like normal , bolder, lighter, or any number between 100 to 900.
+'Font-family' -  it is the font to be used. basically , we have the main font family followed by a comma and a generic font type we can come in case the devices doesn't have that font type. 
+we can get awesome fonts so just go to "font.google.com", select a font and then choose it ; in the top right corner you can see a bag or just click on get embed code and copy the code . PASTE THE CODE INSIDE THE HEAD TAG. AND PASTE THE CSS CODE IN THE CSS FILE, UNDER THE ELEMENT'S NAME. */
+p{
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: initial;
+}
+#helvetica{
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+#arial{
+    font-family: Arial;
+    text-align: end;
+}
+
+#serif{
+    font-family: serif;
+    text-align: justify;
+}
+
+#sans_serif{
+    font-family: sans-serif;
+    text-align: left;
+}
+
+#cursive{
+    font-family: cursive;
+    text-align: right;
+}
+
+#monospace{
+    font-family: monospace;
+    text-align: start;
+}
+
+#fantasy{
+    font-family: fantasy;
+    text-align: inherit;
+   font-weight: 100;
+}
+
+p{
+    color: black;
+}
+
+.this p{
+    color:rgb(205, 74, 74);
+}
+
+/* Inline option puts your tags in the same line */
+.inline{
+    display: inline;
+}
+
+.block{
+    display: block;
+}
+
+footer{
+    clear: right;
+}

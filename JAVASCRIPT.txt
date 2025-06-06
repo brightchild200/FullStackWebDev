@@ -1,0 +1,195 @@
+very awesome explanation for datatypes , variables and basics of any programming language
+
+
+The language that powers the website
+Brendan Eich created Javascript in just 10 days 
+PLAY - go to settings of chrome then find content settings there choose don't allow Javascriptfor sites 
+Whatsapp , instagram , youtube and netflix and many more such websites don't even load when the Javascript is disabled  
+Javascript was initally known as Livescript then Jscript  then ecmascript 
+difference between java and javascript js is an interpreted programming language while java is compiled programming language python js ruby are interpreted languages whereas swift, c ,c++, and java are compiled languages
+See MDN docs for the commands in js
+
+Datatypes
+everything inside the "__" is interpreted as string or message and numbers are in brackets but without "__" qoutes , Boolean - true and false
+
+JS COMMANDS
+alert("hello");     // prints the msg hello when i click enter
+typeof(23);        // gives the datatype of the numbr or anything inside the ()
+prompt()
+var name_of_variable = "__"
+
+String Concatenation 
+"a" + "--" + "b"     or    "a" + name + "b"
+String Lengths  -   var_name.length
+
+To make a tweet length like tweeter but it still misses the not accepting condition when the characters exceed 140 characters 
+var tweet = prompt("Enter you tweet...");
+var length = tweet.length;
+alert("Your tweet is of " + length + " characters. Now, you have only " + (140 - length) + "characters left");
+
+Slicing and extracting the strings . So lets work with the tweeter wala thing to make sure it only tkes upto 140 characters 
+var name = "Angela";
+name.slice(0,1);   // output : A   why only a
+java scropt has indexes from 0 and in the slice syntax it states that we want the string from the 1st number to n-1 th number of mentioned number. AS a result (0,1) gives only A as it is in 0th postion and excludes "n" form slicing.
+
+var nammmee = "RiyaSanjayChaurasiya";
+nammmee.length
+20
+nammmee.slice(4,22)
+'SanjayChaurasiya'
+
+Tweeter wala worked in a kind alert("Your tweet has " + tweet.length + " characters. \n Your tweet is " + tweet.slice(0,141) + " Do the necessary changes ");
+
+Lower case Uppercase
+nammmee.toUpperCase();
+'RIYASANJAYCHAURASIYA'
+nammmee.toLowerCase();
+'riyasanjaychaurasiya'
+
+make sure the system always says hey, User such that the first letter is always capital followed by the other in small  
+var the_name = prompt("Enter your name: ");
+var firstletter = the_name.slice(0,1);
+var later = the_name.slice(1,100);
+alert("Hey, " + firstletter.toUpperCase() + later.toLowerCase());
+
+so on this my input was riya and it return me : "Hey Riya"    awesome right !!!
+
+Basic arithmetic like addition , subtraction, multiplication , division and modulo where it gives you the remainder of the division of 1st number by the 2nd number. It can perform any arthimetic operations and expression with ease OBEYING THE "BODMAS" RULE 
+
+dog age to human age converter 
+human_age = (dog_age - 2) *4 +21;     // got NaN error what is it ??????
+
+The inncrement decrement operators and all the assignment opertors like += , -=, *=, /=, %= are used efficiently by JS 
+
+**************   FUNCTIONS   *************
+Functions are a set of codes that are used repeatatively and it reduces the number of lines of code and can be called again and again without writing all those lines again 
+So funtions are similar to the variables where value of variable is stroed under the name of vaiable similarly the bunch of codes is saved in under the name of the function 
+function getmilk() {
+    alert("Go left");
+    alert("Go left");
+    alert("Go up");
+    alert("Go up");
+}
+getmilk();
+
+
+console.log gives the string in the console 
+
+video no. 92 
+function getMilk() {   
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+}
+
+passing arguments : function getmilk(bottles) {}
+then call it like getmilk(2)
+
+
+RANDOMIZATION AND CONTROL FLOW 
+Love Calculator
+
+var n = Math.random()
+n = n*100
+n = Math.floor(n)
+console.log(n);
+
+prompt("What is your name ?")
+prompt("What is their name?")
+var lovescore = Math.random() * 100
+lovescore = Math.floor(lovescore) + 1
+alert("Your loverscore is : " + lovescore);
+
+ASSIGNMENT OPERATORS 
+ == , != , >= , <= , >, < 
+LOGICAL OPERATORS
+&& , || , !
+
+JAVASCRIPT ARRAYS 
+var eggs = [2, 4, 5, 6, 23]
+var egg1 = eggs[1]
+var guestlist = ["Riya", "Chhaya" , "Sakshi" , "Stuti", "Rohit" , "Sana" , "Shravani", "Saurabh", "Didi", "Selva" , "Kapil"];
+output : (11) ['Riya', 'Chhaya', 'Sakshi', 'Stuti', 'Rohit', 'Sana', 'Shravani', 'Saurabh', 'Didi', 'Selva', 'Kapil']
+guestlist.includes("Simmi")
+false
+guestlist.includes("Stuti")
+true
+
+var guestname = prompt("What is your name?")
+if (guestlist.includes(guestname))
+{
+    alert("Welcome!!!")}
+else
+{
+    alert("We are sorry, you are not invited") ;}
+
+
+var i = 1;
+for (let i = 1; i <=21; i++) {
+  // 100 tak jane mein systen hang kar raa hai and 3 and 5 wali combined loop run nahi ho raha hai. Becuse of the positioning of the codes it should have been placed first to execute first. 3 wala phele aa raha tha toh it checks that condition and gives the output   
+    if (i % 3 == 0 && i % 5 == 0)
+    {
+        alert("FizzBuzz");}
+    else if (i % 5 == 0) {
+        alert("Buzz");
+    }
+    else if (i % 3 == 0)
+    {
+        alert("Fizz");}
+    
+    else{
+alert(i);}
+}
+AND IT WORKED !!!!!!!!
+
+var i = 1;
+undefined
+while (i<2) {
+    console.log(i);
+    i ++;
+}
+// so yeh loop jo hai 2 baar run hoga 1st time pura then 2nd time it will only check the condition which is false and will skip the loop and move on 
+
+CONTROL STATEMENTS - FOR LOOP
+for(var = i ; i < 2; i++)
+{
+    console.log(i);
+}
+
+fibonacci sequence
+function fibonacciGenerator (n) {
+//Do NOT change any of the code above 👆
+    
+    //Write your code here:
+    var n1 = 0;
+    var n2 = 1;
+    console.log(n1);
+    console.log(n2);
+    for (var i = 0; i <n ; i++){
+         var n3 = n1 + n2;
+         console.log(n3);
+         n1 = n2;
+         n3 = n2;
+    }
+
+    //Return an array of fibonacci numbers starting from 0.
+    
+//Do NOT change any of the code below 👇
+}
+
+LATER NOTES ARE IN DOM.txt 

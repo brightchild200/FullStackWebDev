@@ -1,0 +1,21 @@
+Document Object Model - DOM 
+how to use JS in your website 
+So lets create a separarte folder named DOM inside it create index.html
+just like internal , external and inline css Js is also used 
+
+INLINE JS TAGS 
+1. onload - jab website load hoga toh qoutes ka cheex execute hoga 
+onload"alert("Hello")"  here the browser thinks that alert( and ) are two different strings instead of the command hello . And thats why we use single and double qoutes so hello should be in single qoutes 
+
+BUT ININE CSS HAS A LOT OF PROBLEMS . IT IS DIFFICULT TO DEBUGG IT AND IS ALOS NOT GOOD PRACTICE 
+
+INTERNAL JS 
+alert("Hello"); just like that in the script tag in the BODY 
+the website reads the js line by line and executes it 
+
+document.querySelector("h1").innerHTML = "Good Bye"; this is in external file and js is at the bottom of the code so phele hello tha usko baad mein Good bye kar denge .
+now if css ke baad head mein hi meine js bhi call kar liya toh h1 dhundhega woh jo exist hi nahi karta so it will throw error 
+Therefore always js is written below or before the colsing tags ( before end of head) 
+
+DOM ACTUALLY REFERS TO THE FORMATION OF TREE STRUCTURE BASED ON THE PROGRAMMING INTERFACE (CODE) . BASICALLY IT ACTS LIKE A ER DIAGRAM JAHAN PE TAGS KO AS ENTITIES TREAT KARTE HAI THEN USKE ANDAR KI INFO IS ITS VALUES . IT ALSO SHOWS THE RELATIONSHIPS BETWEEN THEM. 
+so suppose we have a dom - document 

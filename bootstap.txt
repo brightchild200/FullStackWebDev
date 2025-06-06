@@ -1,0 +1,48 @@
+Bootstrap is a free, open-source framework that helps developers create websites and web apps faster and more efficiently 
+It contains the predefined formats for developing the websites. It is famous for its 12 column layout system which is made on the flexbox, which makes it simillarly accessible on all other websites.
+Just by adding a bootstrap.css file to a normal home button of html file we can make it look stylish and better 
+Bootstrap github is an open-source link with different css files for styling different elements 
+!!! there are so many frameworks like TAILWIND CSS, BOOTSTRAP, MUI
+It gives us access to feautured title , icons and all
+
+WHEN TO USE IT 
+1. When you want to create a website or web app quickly and efficiently
+2. When you want to create a responsive website or web app that looks good on all devices
+3. When you want to create a website or web app with a consistent design and layout
+4. When you want to create a website or web app with a lot of interactive elements, such as buttons, forms, and modals
+5. When you want to create a website or web app with a lot of pre-built components,such as navigation bars, footers, and hero sections
+6. When you want to create a website or web app with a lot of customization options, such as changing colors, fonts, and spacing
+
+WHEN NOT TO USE IT
+1. When you want to create a website or web app with a unique and custom design that doesn't fit into the Bootstrap framework
+2. When you want to create a website or web app with a lot of complex and custom functionality
+3. When you want to create a website or web app with a lot of server-side rendering or complex backend logic
+4. When you want to deploy your app very soon or you want complete control over it 
+
+HOW TO USE IT 
+!!! Easiest way gto do it is include via CDN   ---->>>   where include the 1st link in the head then for functionalities add the <script> tag just before the end of the </body> tag  .
+1. First, you need to include the Bootstrap CSS file in your HTML file. You can do this by adding a link to the Bootstrap CSS file in the head of your HTML file.
+2. Next, you need to include the Bootstrap JavaScript file in your HTML file. You can do this by adding a script tag to the Bootstrap JavaScript file in the body of your HTML file.
+3. Once you have included the Bootstrap CSS and JavaScript files, you can start using Bootstrap classes to style your HTML elements.
+4. Bootstrap classes are used to add styles to HTML elements. For example, you can use the class "btn btn-primary" to create a primary button.
+
+HANDS ON EXPERIENCE ON BOOTSTRAP FOLDER 
+Website for it is getbootstrap.com
+
+!!! BOOTSTRAP LAYOUT !!!
+It is a 12- column layout system which is made up of 3 components that are 1st div : container , then div : row ; and last is different divs of items i.e. 12 columns . Bootstrp always tries ti arrange and space evenly the divs of items.
+Their are diffenrent bootstrap containers with extensions xl , xxl, sm, md, lg , etc. which has there predescriberd height and width. This helps in the making the website responsive. In most cases, the .container and .container-fluid bootstraps are used.
+So, we basically use col-2 for 2/6th of the 100% width, col-6 for 50% width so that the bootstrap knows it. This proportion is from col-1 to col-12. If w fail to give a number to them then it will automatically distribute the space .
+We just need to add the link and script tag present on the bootstrap website to use bootstrap in our website
+!!! Breakpoints --- >>> SMALL - Mobile , MEDIUM - IPad , LARGE - LP , EXTRA LARGE - Desktop , EXTRA EXTRA LARGE - TV  !!! thus, we really don't need the media queries as it covers all 
+syntax - col-sm-2    this means that the col occupes the space of 2/6th of the width and then it is specifically for the small to all above media devices like mobile phones. tab, pc, LP. 
+we can have multiple Breakpoints for same div like - col-sm-12 col-md-8 col-lg-4  which perfectly describes what should its size be when it is used for those specified devices. 
+To practice bootstrap website is appbrewery.github.io/bootstrap-layout. If we got stucked then go to the docs and read specifically layout option 
+
+!!! BOOTSTRAP COMPONENTS !!!
+in bootstrapwe can esily access the different colorsby thier name
+1. Button - <button type="button" class="btn (for bootstrap button) btn-primary > ... </button>  btn-primary is the color 
+
+meine pura project kiya hai 11.2 bootstrap_templates.asp   for many more templates 
+
+https://appbrewery.github.io/tindog/  is a ful fledge website 

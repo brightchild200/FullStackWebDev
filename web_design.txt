@@ -1,0 +1,51 @@
+Principles of Web design
+1. Color Theory
+2. Typography
+3. User Interface (UI) design i.e. layout 
+4. User Experience (UX) design
+
+1. Color Theory 
+So, a good website to choose a color panel is https://colorhunt.co/    or     https://color.adobe.com/create/color-wheel
+YELLOW - Joy, Intellect, GREAT attention seeker, one can not get himself out without reading or glancinng it !!! YELLOW IS GOOD FOR HEADLINES AND ALL BUT NOT FOR THE THINGS FOR LONG PERIOD OF TIME !!!
+color Theoryis the art and science of making your website look more appealing . While picking the color it is where improtant to chose it according to the mood of the content becoz each color conveys a msg and a story 
+RED - energy , love , intensity -- >> that is ahy most of the car ads use either red background or red cars itself 
+GREEN - freshness , growth , safety -- >> highly recommended for the food commercial websites !!!!
+BLUE - stability , trust , serenity (peace) -- >> most of the financial companies like the PayPal and all use blue color to highlight them that they are trustworthy
+PURPLE - royality , wealth , femininity -- >> payday loan companies especially the ones that target the woman use this color 
+
+COMBING THE COLORS 
+Anologus colours - A color on the color wheel and the very next color on its right . -->> Such colors are good for NavBar and Body of the website , logos and backgrounds 
+Complimentary color - Opposite collors on the color wheel -- >> creates a pop and brings out both the color 
+Equilateral triangle (tradic) - the euilateral triangle forming in the color palette works very well 
+
+2. Typography
+It is really very important to choose the correct font to grab the attention of the audience. Each font has its own mood 
+SERIF - Jiska pair nikala rehta hai -->> more serious , more authorized and bit old -- >> !! Good for the letterheads and for magzine. But these are futher divided int Old , Modern, Transitional and slab-serif 
+!!! To compare the fonts ---- look at the "o" of all the fonts and compare their thickest and thinest parts 
+SANS SERIF - more friendly and more approachable, more novel and more contemporary. It is highly readable typeface
+!!! using alot of fonts makes your website look unprofessional and very cluttered . Bt just by using 2 diff fonts inn the same design can make the website look more pleasing 
+
+3. UI DESIGN 
+Our brain always concentrates on bigger and bolder things. To increase this we need to color theme which stands out highlighting the content. 
+NEXT thing is the size of the elements. The items on which we want to stress should be in large size. 
+NEXT is LAYOUT . It is really very important that the content is properly managed not in a very narrow place nor in wide region which would make it difficult to read . Eg -- >> Wikipedia ka website mein content small size and wide area mein hai which makes it a bit difficult to read . While , the Grammarly website looks quiet appealing. 
+NEXT, the alignment.A trick to make the UI more better is to reduce the number of alignments and this looks more professional
+Alignment is the way in which the elements are placed in the website. There are 3 types of alignment -
+- Left alignment - used for the content which is not very important
+- Center alignment - used for the content which is very important
+- Right alignment - used for the content which is very less important
+NEXT, White space. By just spacing out things we can make them look more expensive and improtant rather more athurozied. 
+By just adding white space the design looks more minimalist and professional 
+NEXT, audience for whom we are designing the website
+
+4. UX DESIGN
+UI is the design of the website which we feel is good and asthetic
+1. Simplicity - Keeping things simple is better than complicating it. Making things look more easy to access.
+2. Consistency - Consistency is the key to good UX design. Readers mainly follow the F pattern where  in the images and icons and bulletins should be placed on the left side to make the website more Consistent. THeir is another layout pattern Z pattern where in the websites with videos or mainly the commercial websites use this pattern. A very famous example of it is FACEBOOK
+3. Feedback - Feedback is the response of the user after performing an action. whenever you make a website test it with your family , friends so get the improvements need done so that you ought to develop better UI/ UX websites 
+4. Error prevention - Error prevention is the process of preventing the user from making mistakes. Eg --
+5. All devices - It is imparotant tht we design the elements Such that it fits all the devices perfectly and with ease. One should not design the website for mobiles such that it has too small font size or the whole screen is covered with the photo which will make the user scroll it extensively creating trouble for the users 
+
+WEB DESIGN PRINCIPLES
+!!! Daily UI is a website which gives you projects to design for 100 days . Another website is Collect UI 
+
