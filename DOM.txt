@@ -7,7 +7,7 @@ INLINE JS TAGS
 1. onload - jab website load hoga toh qoutes ka cheex execute hoga 
 onload"alert("Hello")"  here the browser thinks that alert( and ) are two different strings instead of the command hello . And thats why we use single and double qoutes so hello should be in single qoutes 
 
-BUT ININE CSS HAS A LOT OF PROBLEMS . IT IS DIFFICULT TO DEBUGG IT AND IS ALOS NOT GOOD PRACTICE 
+BUT ININE CSS HAS A LOT  OF PROBLEMS . IT IS DIFFICULT TO DEBUGG IT AND IS ALOS NOT GOOD PRACTICE 
 
 INTERNAL JS 
 alert("Hello"); just like that in the script tag in the BODY 
@@ -17,5 +17,63 @@ document.querySelector("h1").innerHTML = "Good Bye"; this is in external file an
 now if css ke baad head mein hi meine js bhi call kar liya toh h1 dhundhega woh jo exist hi nahi karta so it will throw error 
 Therefore always js is written below or before the colsing tags ( before end of head) 
 
-DOM ACTUALLY REFERS TO THE FORMATION OF TREE STRUCTURE BASED ON THE PROGRAMMING INTERFACE (CODE) . BASICALLY IT ACTS LIKE A ER DIAGRAM JAHAN PE TAGS KO AS ENTITIES TREAT KARTE HAI THEN USKE ANDAR KI INFO IS ITS VALUES . IT ALSO SHOWS THE RELATIONSHIPS BETWEEN THEM. 
+DOM ACTUALLY REFERS TO THE FORMATION OF TREE STRU CTURE BASED ON THE PROGRAMMING INTERFACE (CODE) . BASICALLY IT ACTS LIKE A ER DIAGRAM JAHAN PE TAGS KO AS ENTITIES TREAT KARTE HAI THEN USKE ANDAR KI INFO IS ITS VALUES . IT ALSO SHOWS THE RELATIONSHIPS BETWEEN THEM. 
 so suppose we have a dom - document 
+
+so lets talk about the DOM html tree structure 
+basically you can download the html tree structure chrome extension which shows ut the whole structure of the document 
+type document; in console and you will get to see the whole html file 
+then type document.firstelementchild;   -->> this gives us the first child elemnt of the tree sturcture which is the HTML element 
+then document.firstelementchild.firstelementchild;   --->> this will give us the child element of html tag which is HEAD . bascically the HTML tag consists of 2 child elements - HEAD AND BODY  but since we are lookinh for the first one hence we get the head element's code 
+For body we can do the .lastelementchild;
+
+lets try this mere dom ke folder mein body ka firsstelement is h1 tag containg "hello" text. Now we declare a variable heading andgive it the h1 element by this document.firstelementchild.lastelementchild.firstelementchild;
+
+document;
+#document (http://127.0.0.1:5500/DOM/index.html)<!DOCTYPE html><html lang=​"en">​<head>​…​</head>​<body>​…​</body>​</html>​
+document.firstElementChild;
+<html lang=​"en">​<head>​…​</head>​<body>​…​</body>​</html>​
+document.firstElementChild.firstElementChild;
+<head>​…​</head>​
+document.firstElementChild.lastElementChild.firstElementChild;
+<h1>​Hello​</h1>​
+var heading = document.firstElementChild.lastElementChild.firstElementChild;
+undefined
+heading.inn
+undefined
+heading.innerHTML = "Good bye";
+'Good bye'
+
+heading.style.color = 'red';
+'red'
+heading.style.color = 'yellow';
+'yellow'
+
+!!!!!The querySelector() method in JavaScript is a powerful tool for selecting elements within the Document Object Model (DOM) using CSS selectors. It returns the first element that matches the specified selector, or null if no match is found. !!!!
+
+using js we can manipulate the data on our website the properties the methods by just using the dot operator 
+suppose we have a red car and we are using car.colour; querySelector to get the property of the car then it will show output as red -->> this is called a GET PROPERTY 
+suppose we change the no. of doors property by car.numberofDoors = 0;  -->> then it is called as SET PROPERTY              only difference between set and get property is = sign 
+lets call the drive function    by car.drive();   then it will do something -->> this is called as calling a method !!!
+
+difference between method and functionis that a method is something an obj can do so it has to be assciated with an obj . here drive is a method that is associated with the obj car
+
+selecting html elements with js 
+1. tag name - document.getElementsByTagName("tag name");    -- this is a method and will give all the tags and their properties withh the particular tag. elements is in pural form and thus it will give all the elements amd we get thhe ans in the form of an array 
+document.getElementsByTagName("tag name").style.color = 'red';   this will show error as we have many elements 
+so to point out on a specific element we need to give its position in the array using the square bracket like this document.getElementsByTagName("tag name")[number].style.color = 'red';
+
+to  know how many elements of this tag are their use document.getElementsByTagName("tag name").length
+
+2. class name - it gives all the elements with the same mentioned class name 
+document.getElementsByClassName("class name")   evven do single element hoga toh bhi it will give array and isliye you need the [] to access the element 
+
+3. id name - It is very imp as we know the id should be unique . this is done by document.getElementByIdName("id name");   here it will only give one elemnt and no array   
+Q. agar phir bhi dodo elements ko same id hogi toh kya hoga ?
+If two elements have the same id, using document.getElementById("id") will always return only the first element with that id in the DOM (in document order). IDs are meant to be unique, so having duplicate IDs is invalid HTML and can cause unpredictable behavior.
+
+4. querySelector - it is the most powerful method to select the elements . it is used to retrive anything class id or element  bus class ke liye .class name likhna padta hai and id ke liye #idname 
+we can use heirachy in the query selector suppose i want to select anchor tag present in the list tag then do it like this document.querySelector("li a");  this is for parent and child but for same eleemnt suppose we have li element with cllass name item then use document.querySelector("li.item");   // no space 
+but querySelector sirf ek hi elemnt dega for all elements do this document.querySelectorAll("  ");
+
+REST IS IN THE NOTEBOOK 
