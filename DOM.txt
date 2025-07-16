@@ -77,3 +77,108 @@ we can use heirachy in the query selector suppose i want to select anchor tag pr
 but querySelector sirf ek hi elemnt dega for all elements do this document.querySelectorAll("  ");
 
 REST IS IN THE NOTEBOOK 
+
+
+Advanced js PRACTICE 
+
+// document.querySelector("h1").innerHTML = "Good Bye";
+
+function car(){
+    alert("Hello World");
+    document.querySelector("h1").innerHTML = "Good Bye";
+};
+
+document.querySelector("h1").innerHTML;
+'Hello'
+document.querySelector("h1");
+<h1>​Hello​</h1>​
+document.querySelector("h1").style.color = 'red';
+'red'
+document.querySelector("h1").innerHTML = "Riya";
+'Riya'
+
+document.getElementById("sec");
+<li id=​"sec" class=​"seco and">​…​</li>​
+document.getElementsByTagName("li");
+HTMLCollection(3) [li, li#sec.seco.and, li.hello.sec, sec: li#sec.seco.and]
+document.getElementsByTagName("li")[1];
+<li id=​"sec" class=​"seco and">​…​</li>​
+document.getElementsByClassName("hello");
+HTMLCollection(2) [h1.hello, li.hello.sec]
+document.getElementsByClassName("hello")[0];
+<h1 class=​"hello">​Hello​</h1>​
+document.getElementsByClassName("seco")[0];
+<li id=​"sec" class=​"seco and">​…​</li>​
+document.querySelector("li.sec")
+<li class=​"hello sec">​…​</li>​
+
+document.querySelector("ul .sec")
+<li class=​"hello sec">​…​</li>​
+document.querySelector("ul .hello")
+<li class=​"hello sec">​…​</li>​
+document.querySelector(".hello")
+<h1 class=​"hello">​Hello​</h1>​
+document.querySelectorAll(".hello")
+NodeList(2) [h1.hello, li.hello.sec]
+document.querySelectorAll(".hello")[0]
+<h1 class=​"hello">​Hello​</h1>​
+
+document.querySelector(".hello").classList;
+DOMTokenList ['hello', value: 'hello']
+document.querySelector(".hello").classList.add("invisible");
+undefined
+document.querySelector(".hello").classList;
+DOMTokenList(2) ['hello', 'invisible', value: 'hello invisible']
+document.querySelector(".hello").classList.remove("invisible");
+undefined
+document.querySelector(".hello").classList;
+DOMTokenList ['hello', value: 'hello']
+document.querySelector(".hello").classList.toggle("invisible");
+true
+document.querySelector(".hello").classList.toggle("invisible");
+false
+document.querySelector(".hello").classList.toggle("invisible");
+true
+
+ADVANCED JS IN DRUMKIT index.js
+
+$0
+<div class=​"set">​…​</div>​
+$0
+<button class=​"a drum">​a​</button>​
+function  add(num1 , num2) {
+    return num1 + num2;
+};
+undefined
+
+// make a calculator
+function  add(num1 , num2) {
+    return num1 + num2;
+};
+
+function multiply(num1 , num2){
+    return num1 * num2;
+};
+
+function  divide(num1 , num2) {
+    return num1 / num2;
+};
+
+function subtract(num1 , num2){
+    return num1 - num2;
+};
+
+function calculator(num1 , num2 , operator) {
+    console.log("Choose anyone operation among add, subtract, multiply and divide");
+    return operator(num1, num2);
+};
+undefined
+calculator(3, 4, add);
+VM2192:18 Choose anyone operation among add, subtract, multiply and divide
+7
+debugger;
+calculator
+ƒ calculator(num1 , num2 , operator) {
+    console.log("Choose anyone operation among add, subtract, multiply and divide");
+    return operator(num1, num2);
+}
