@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/login" method="POST">
+        <!-- here we always need to mention for which purpose is this form like here we want to save the info. It can be GET, PUT , PATCH also 
+         Label is a place where we label give name to the input field because input is just a box accepting the text of strings 
+         input tag usually has 2 properties : type means what it is ? a plain text , button , radiobutton , checkbox or submit ( which is a button where value contains the text which should be written on this button ) tthen the 2nd property is name of the value or data which will go inside it 
+         it also has required attribute which says that until and unless you fill that you cannot submit the form   
+         now go to projects > midddleware project   -->
+        <label for="email">Email</label>
+        <input type="text" name="email" required>
+        <label for="password">Password</label>
+        <input type="text" name="password" required>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+here in the codes we are using new express method which is sendFile which requires the exact location to correctly interpret it and 
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+this sort of code enables us to use the root path wherever it is hosted then 
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
+});
+it will add this public wala path making it 100% working 
+
+how to add body-parser 
+1. use npm to install the body-parser module
+2. Run thefile.js with nodemon.
+3. Import body-parser module
+// naming convention we cannot use - which naming the object to be imported 
+use method should be used before any of the route (http) methods 
+4. Mount middleware using the express method ".use" method
+5. Specify .urlencoded({extended: true}) to create a body for url- encoded requests like submitting a form 
+6. write a post("/submit") handler where you console.log() the form contents when the user clicks the submit button . 
+
+app.use(bodyParser.urlencoded({ extended: true }));
+this is the lineof code that is used in more than 90% cases
+then add body to the routes
+
+app.post("/submit", (req, res) => {
+  console.log(req.body);
+  res.send("Form submitted successfully!");
+});
