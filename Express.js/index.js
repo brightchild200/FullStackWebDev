@@ -100,4 +100,4 @@ app.listen(port, () => {
 Middlewares are like middlemens who pre-process the requests (specially when we know that the request is going to be handled by multiple aspects like GET, POST and all.)It can check if the user has that uthority to make specific requests , or for security purpose.  
 A very famous middleware is "body parser" - it can look at the request bodies before the server side handlers actually access them. This is mainly used when we are having form data like login form 
 this activity is in side form folder 
-*/
+*/ 

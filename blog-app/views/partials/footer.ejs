@@ -1,0 +1,29 @@
+  </main>
+
+  <footer class="bg-dark text-light text-center py-3 mt-auto fixed-bottom">
+    <p class="mb-0">© <%= new Date().getFullYear() %> My Blog | Built by Riya Chaurasiya using Node.js & EJS</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Load previous theme preference
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark-mode');
+      toggleButton.textContent = '☀️ Light Mode';
+    }
+
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      const darkModeEnabled = body.classList.contains('dark-mode');
+      toggleButton.textContent = darkModeEnabled ? '☀️ Light Mode' : '🌙 Dark Mode';
+      localStorage.setItem('theme', darkModeEnabled ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>

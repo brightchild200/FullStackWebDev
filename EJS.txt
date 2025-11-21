@@ -1,0 +1,4 @@
+EJS is a templating language . EJS means Embedded Javascript. It is like running html codes in js file where js is in <%= %> 
+This make the website dynamic . To work on ejs download the ejs support for vs code
+res.sendFile is strictly only for static websites 
+So how to do that ....   use res.render(filename.ejs) where we pass a key-value pair 

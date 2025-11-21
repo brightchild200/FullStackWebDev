@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+    <title>I am practicing</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Let's find something for you to do ✌️</h1>
+
+        <form action="/" method="GET" class="form" id="form">
+            <select name="type" class="select-type">
+                <option value="" data-display="Select">Random</option>
+                <option value="eduction">Education</option>
+                <option value="charity">Charity</option>
+                <option value="recreational">Recreational</option>
+                <option value="relaxation">Relaxation</option>
+                <option value="busywork">Busywork</option>
+                <option value="social">Social</option>
+                <option value="diy">Diy</option>
+                <option value="music">Music</option>
+            </select>
+
+            <select name="participants" class="select-participants">
+                <option value="" data-display="Select">Any number of people</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <button type="submit" class="btn" id="btn">Let's Go</button>
+        </form>
+
+        <section id="cards" class="cards">
+             <%if (locals.data) {%>
+            <article class="card_item">
+                <h2 class="card_activity">
+<%=data.activity %>
+                </h2>
+                <div class="card_info">
+                    <span class="card_type">
+<%=data.type %>
+                    </span>
+                    <span class="card_participants">
+
+participants = <%=data.participants %>
+                        <span class="card_number">
+
+                        </span>
+                    </span>
+                </div>
+            </article>
+<%}%>
+
+<%if (locals.error) {%>
+            <div id="tag-error" class="tag-error">
+                <%=error%>
+        <!-- Show any errors that were sent from the backend -->
+      </div>
+      <%}%>
+        </section>
+
+    </div>
+</body>
+
+</html>
